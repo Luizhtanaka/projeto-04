@@ -43,8 +43,8 @@ class LeadController extends Controller
             $lead = new Lead();
 
             $lead->user_id = $user->id;
-            $lead->nome = $user->name;
-            $lead->email = $user->email;
+            $lead->nome = $codigo_parceiro['Nome'];
+            $lead->email = $codigo_parceiro['Email'];
             $lead->save();
 
         }
