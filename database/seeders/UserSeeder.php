@@ -17,24 +17,24 @@ class UserSeeder extends Seeder
     {
         DB::table('users')->insert([[
             'codigo' => 'Tanaka',
-            'nivel_acesso' => 'S',
             'name' => 'Luiz Henrique Tanaka',
             'email' => 'luizhenrique.tk@hotmail.com',
             'password' => Hash::make('123456'),
+            'created_at' => date("Y-m-d H:i:s")
         ],
         [
             'codigo' => 'Jamilton',
-            'nivel_acesso' => 'S',
             'name' => 'Jamilton Agripino',
             'email' => 'jamilton@consorciocanopus.com.br',
             'password' => Hash::make('123456'),
+            'created_at' => date("Y-m-d H:i:s")
         ],
         [
             'codigo' => 'Brino',
-            'nivel_acesso' => 'N',
             'name' => 'Luiz Brino',
             'email' => 'brino@redecanopus.com.br',
             'password' => Hash::make('123456'),
+            'created_at' => date("Y-m-d H:i:s")
         ]
     ]);
     }

@@ -192,7 +192,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"> {{$user->name}}</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"> {{ $user->name }}</span>
                                 <img class="img-profile rounded-circle"
                                     src="{{asset('assets/img/undraw_profile.svg')}}">
                                     
@@ -234,6 +234,8 @@
                     </div>
 
                     <!-- Content Row -->
+                    <!-- Controle de acesso - admin -->
+                    @can('access')
                     <div class="row">
 
                         <!-- Earnings (Monthly) Card Example -->
@@ -243,8 +245,8 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Earnings (Monthly)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                                                Parceiros Cadastrados (Mês)</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $quantidade }}</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -398,6 +400,8 @@
                         </div>
                     </div>
                 </div>
+                @endcan
+                <!-- Controle de acesso - admin -->
                 <!-- /.container-fluid -->
 
             </div>

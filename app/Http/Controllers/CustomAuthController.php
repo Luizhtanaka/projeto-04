@@ -66,12 +66,17 @@ class CustomAuthController extends Controller
       ]);
     }    
     
-    public function dashboard()
+    public function dashboard(Request $request)
     {
         if(Auth::check()){
             $user = Auth::user();
 
-            return view('dashboard',compact("user"));
+            $Count_user = User::all()
+            ->where('access_level','=', 'user')
+            ->count();
+            
+            //return view('dashboard',compact("user"));
+            return view('dashboard',(["user" => $user,"quantidade"=>$Count_user]));
         }
   
         return redirect("login")->withSuccess('You are not allowed to access');
