@@ -35,6 +35,27 @@ class UserSeeder extends Seeder
             'email' => 'brino@redecanopus.com.br',
             'password' => Hash::make('123456'),
             'created_at' => date("Y-m-d H:i:s")
+        ],
+        [
+            'codigo' => 'Daniel',
+            'name' => 'Daniel Torres',
+            'email' => 'daniel@redecanopus.com.br',
+            'password' => Hash::make('123456'),
+            'created_at' => date("Y-m-d H:i:s")
+        ],
+        [
+            'codigo' => 'Tozzi',
+            'name' => 'Marcos Tozzi',
+            'email' => 'ti2.consorcio@consorciocanopus.com.br',
+            'password' => Hash::make('123456'),
+            'created_at' => date("Y-m-d H:i:s")
+        ],
+        [
+            'codigo' => 'Victor',
+            'name' => 'Victor',
+            'email' => 'ti3.consorcio@consorciocanopus.com.br',
+            'password' => Hash::make('123456'),
+            'created_at' => date("Y-m-d H:i:s")
         ]
     ]);
     }

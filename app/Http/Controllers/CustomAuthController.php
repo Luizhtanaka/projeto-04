@@ -1,5 +1,7 @@
 <?php
 namespace App\Http\Controllers;
+
+use App\Models\Lead;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
@@ -12,7 +14,7 @@ class CustomAuthController extends Controller
         if(Auth::check()){
             $user = Auth::user();
 
-            return view('dashboard',compact("user"));
+            return view('site.dashboard',compact("user"));
         }
   
         return view('auth.login');
@@ -54,7 +56,7 @@ class CustomAuthController extends Controller
         $data = $request->all();
         $check = $this->create($data);
          
-        return redirect("dashboard")->withSuccess('You have signed-in');
+        return redirect("site.dashboard")->withSuccess('You have signed-in');
     }
 
     public function create(array $data)
@@ -74,9 +76,25 @@ class CustomAuthController extends Controller
             $Count_user = User::all()
             ->where('access_level','=', 'user')
             ->count();
+
+            $list_users = User::all()
+            ->where('access_level','=', 'user');
+
+            $Count_leads = Lead::all()
+            ->where('user_id','=', $user->id)
+            ->count();
+
+            $list_leads = Lead::all()
+            ->where('user_id','=', $user->id);
             
             //return view('dashboard',compact("user"));
-            return view('dashboard',(["user" => $user,"quantidade"=>$Count_user]));
+            return view('site.dashboard',([
+                                            "user" => $user
+                                            ,"quantidade_user"=>$Count_user
+                                            ,"list_user" => $list_users
+                                            ,"quantidade_lead" => $Count_leads
+                                            ,"list_lead" => $list_leads
+                                        ]));
         }
   
         return redirect("login")->withSuccess('You are not allowed to access');
