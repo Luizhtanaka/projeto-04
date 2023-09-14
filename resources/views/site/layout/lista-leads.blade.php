@@ -27,7 +27,7 @@
                             Link de Divulgação
                         </div>
                         <div>
-                            <a class="btn btn-primary h5 mb-0 font-weight-bold text-white-800" href="{{ route('site.home') }}">{{ route('site.home') }}?resource={{$user->codigo}}</a>
+                            <a class="btn btn-primary h5 mb-0 font-weight-bold text-white-800" href="{{ route('site.home') }}?resource={{$user->codigo}}">{{ route('site.home') }}?resource={{$user->codigo}}</a>
                         </div>
                     </div>
                     <div class="col-auto">

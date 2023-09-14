@@ -235,9 +235,9 @@
                     
                     <!-- Earnings (Monthly) Card Example -->
 
-
-                    @include('site.layout.lista-leads')
-
+                    @can('access_parceiro')
+                        @include('site.layout.lista-leads')
+                    @endcan
                     <!-- Content Row -->
                     <!-- Controle de acesso - admin -->
                     @can('access')
