@@ -10,6 +10,9 @@
                     <th>Código</th>
                     <th>Nome</th>
                     <th>Email</th>
+                    <th>Leads Capturado</th>
+                    <th>Editar</th>
+                    <th>Excluir</th>
                 </tr>
             </thead>
             @foreach ($list_user as $user)
@@ -18,6 +21,9 @@
                     <td>{{ $user->codigo }}</td>
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
+                    <td>0</td>
+                    <td><a href="#">Editar</a></td>
+                    <td><a href="#">Excluir</a></td>
                 </tr>
             </tbody>
             @endforeach

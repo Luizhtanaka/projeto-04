@@ -56,6 +56,20 @@ class UserSeeder extends Seeder
             'email' => 'ti3.consorcio@consorciocanopus.com.br',
             'password' => Hash::make('123456'),
             'created_at' => date("Y-m-d H:i:s")
+        ],
+        [
+            'codigo' => 'Paula',
+            'name' => 'Paula Miranda',
+            'email' => 'paula@consorciocanopus.com.br',
+            'password' => Hash::make('123456'),
+            'created_at' => date("Y-m-d H:i:s")
+        ],
+        [
+            'codigo' => 'Mih',
+            'name' => 'Michele',
+            'email' => 'Michele@consorciocanopus.com.br',
+            'password' => Hash::make('123456'),
+            'created_at' => date("Y-m-d H:i:s")
         ]
     ]);
     }

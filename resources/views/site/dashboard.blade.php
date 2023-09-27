@@ -5,4 +5,6 @@
     @include('site.layout.lista-usuarios')
 
     @include('site.layout.lista-leads')
+
+    @include('auth.register')
 @endsection
