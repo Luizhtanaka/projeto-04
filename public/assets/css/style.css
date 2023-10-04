@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+}
+
+body, h1, h2, p, ul, li, a{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    color: #222222;
+    background-color: #f8f8f8;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: flex;
+    max-width: 100%;
+
+}
+
+.content{
+    display: flex;
+    background-color: #303333;
+}
+.content-banner-menu{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.entenda-info{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.entenda{
+    margin-top: 50px;
+    background-color: #f8f8f8;
+}
+
+.entenda-info h1{
+    margin-bottom: 30px;
+    color: #003641;
+    font-weight: bold;
+    font-size: 30px;
+}
+.entenda-info p{
+    padding: 0 0 16px;
+    text-align: justify;
+}
+
+
+.produtos{
+    margin-top: 30px;
+    background-color: #003641;
+
+}
+.produtos h1{
+    padding: 50px;
+    text-align: center;
+    color: #FFF;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.produtos-conteiner{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.produtos-item-img{
+    background-color: #FFF;
+    box-sizing: border-box;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+.produtos-item-img p{
+    padding: 15px;
+
+}
+.imagem-arredondada{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.lance{
+    margin-top: 50px;
+}
+.lance-conteiner{
+    max-width: 960px;
+    margin: 0 auto;
+    color: #FFF;
+    display: flex;
+}
+.lance-container-item{
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.lance-container-item h1{
+    padding: 0px;
+    font-size: 48px;
+    text-align: left;
+    border-right: 1px solid #CBD231;
+}
+
+.lance-container-item p{
+    padding: 0 0 20px;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.info{
+    background-color: #00a091;
+    
+
+}
+
+.info-conteiner{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.info-conteiner-item{
+    max-width: 300px;
+    margin: 30px 10px;
+    padding: 15px;
+    text-align: center;
+    background-color: #FFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: block;
+    
+}
+.info-conteiner-item img{
+    align-items: center;
+    background-color: #FFF;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.info-conteiner-item-full{
+    max-width: 960px;
+    margin: 10px auto 0px;
+    padding: 15px;
+    text-align: center;
+    background-color: #FFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: block;
+    
+}
+.info-conteiner-item-full img{
+    align-items: center;
+    background-color: #FFF;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.contato{
+    background-color: #003641;
+}
+
+
+.contato-conteiner{
+    color: #FFF;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.contato-conteiner-item{
+
+    margin: 30px 0px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: block;
+    
+}
+.contato-conteiner-item h1{
+    font-size: 62px;
+    text-align: left;
+    
+}
+.contato-conteiner-item p{
+    color:  #01bc83;
+    font-size: 1em;
+    
+}
+
+.contato-conteiner-item-form{
+    background-color: #00181e;
+    border-radius: 15px 15px 15px 15px;
+    padding: 50px 40px;
+    margin-bottom: 50px;
+}
+
+label {
+    width: 480px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    background-color: #00a091;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #015f56;
+  }
+  
+.rodape{
+background-color: #00181e;
+
+}
+
+.rodape img{
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 30px;
+}
